@@ -1,0 +1,41 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(box/Body.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+li {
+    list-style-type: none; 
+}
+.boxMain {
+    background-image: url(box/Main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ava {
+    transition: all 400ms;
+    width: 4ex; 
+    height: 4ex;
+}
+.ava:hover {
+    width: 5ex; 
+    height: 5ex;
+}
+.ico {
+    transition: all 1s;
+}
+.ico:hover {
+    transform: translate(3ex);
+}
