@@ -1,3 +1,7 @@
+::selection{
+    color: #1A132F;
+    background-color: #F7E2E2;
+    }
 body {
     height: 100%;
     display: flex;
@@ -22,7 +26,11 @@ li {
     background-image: url(box/Main.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    transition: all 400ms;
+}
+.boxMain:hover {
+    transform: translate(0, -0.6ex);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.6);
 }
 .ava {
     transition: all 400ms;
@@ -34,8 +42,8 @@ li {
     height: 5ex;
 }
 .ico {
-    transition: all 1s;
+    transition: all 200ms;
 }
 .ico:hover {
-    transform: translate(3ex);
+    transform: translate(2ex);
 }
