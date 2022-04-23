@@ -10,4 +10,4 @@ async function getAva() {
     let avaUrl = 'https://api.telegram.org/file/bot5281659940:AAEJLcavorU-PoeGX8Q49nGNkDuO9vzGXBE/' + dataava.result.file_path
   
     document.getElementById('ava').src = avaUrl
-  }
+}

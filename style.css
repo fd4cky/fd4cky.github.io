@@ -1,20 +1,18 @@
+:root {
+    --trans: all 400ms;
+}
 ::selection{
     color: #1A132F;
     background-color: #F7E2E2;
-    }
+}
 body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(box/Body.jpg);
+    background-image: url(backgrounds/Main.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 h1 {
     font-family: 'Fredoka One', cursive;
@@ -22,18 +20,33 @@ h1 {
 li {
     list-style-type: none; 
 }
-.boxMain {
-    background-image: url(box/Main.jpg);
-    background-size: cover;
-    background-position: center;
-    transition: all 400ms;
+.glass-dark {
+    height: 55ex;
+    border-radius: 50px;
+    transition: var(--trans);
 }
-.boxMain:hover {
-    transform: translate(0, -0.6ex);
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.6);
+.glass-dark:hover {
+    transform: translate(0, -0.5ex);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+.icoBack {
+    width: min-content;
+    border-radius: 25px;
+    transition: var(--trans);
+}
+.icoBack:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.ico {
+    transition: var(--trans);
+}
+.ico:hover {
+    transform: scale(1.05);
 }
 .ava {
-    transition: all 400ms;
+    transition: var(--trans);
     width: 4ex; 
     height: 4ex;
 }
@@ -41,9 +54,8 @@ li {
     width: 5ex; 
     height: 5ex;
 }
-.ico {
-    transition: all 200ms;
-}
-.ico:hover {
-    transform: translate(2ex);
+@media screen and (max-width: 768px) {
+    .glass-dark {
+        border-radius: 20px;
+    }
 }
