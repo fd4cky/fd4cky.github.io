@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html theme="dark">
 <head>
     <title>Raccoon City</title>
     <meta charset="UTF-8">
-    <link type="image/x-icon" href="icons/ico.png" rel="shortcut icon">
+    <link type="ico" href="icons/ico.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">  
-    <script>getAva()</script>
 </head>
 <body class="fw-bold">
-    <header class="opacity-75 p-1 px-2 bg-dark text-light rounded-bottom position-fixed w-100" style="z-index: 9997;">
-        <img id="ava" type="button" class="ava rounded-circle" src="https://api.telegram.org/bot5281659940:AAEJLcavorU-PoeGX8Q49nGNkDuO9vzGXBE/getUserProfilePhotos?user_id=5285094955">
+    <header class="opacity-75 p-1 px-2 header text-light rounded-bottom position-fixed w-100 d-flex" style="z-index: 9997;">
+        <img id="ava" type="button" class="ava">
     </header>
     <content class="d-flex text-light " style="margin-top: 8ex;">
-        <div class="glass-dark m-1 w-75">
+        <div class="glass m-1 w-75">
             <h1 class="text-center mt-3">Bio</h1>
             <p class="text-break p-4">Вот и пришло время что то да написать.</p>
         </div>
-        <div class="glass-dark m-1 w-25 p-1">
+        <div class="glass m-1 w-25">
             <h1 class="text-center mt-3">Social</h1>
             <ul class="p-1">
                 <li class="icoBack m-1"><a href="https://vk.com/fdacky"><img id="vk" class="ico" src="icons/vk.png" width="75ex" height="75ex"></a></li>
@@ -33,5 +30,7 @@
             </ul>
         </div>
     </content>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>

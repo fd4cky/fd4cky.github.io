@@ -1,3 +1,16 @@
+function theme() {
+    const buttonSwitch = document.getElementById('ava')
+
+    buttonSwitch.addEventListener('click', () => {
+        if (document.documentElement.getAttribute('theme') == 'dark'){
+            document.documentElement.setAttribute('theme', 'light')
+        }else {
+            document.documentElement.setAttribute('theme', 'dark')
+        }
+    })
+}
+theme()
+
 async function getAva() {
     const response = await fetch('https://api.telegram.org/bot5281659940:AAEJLcavorU-PoeGX8Q49nGNkDuO9vzGXBE/getUserProfilePhotos?user_id=5285094955')
     const data = await response.json()
@@ -11,3 +24,4 @@ async function getAva() {
   
     document.getElementById('ava').src = avaUrl
 }
+getAva()
