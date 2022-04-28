@@ -56,7 +56,6 @@ li {
     background-color: var(--color-header);
 }
 .glass {
-    height: 55ex;
     border-radius: 50px;
     transition: var(--trans);
 }
