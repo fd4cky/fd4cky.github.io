@@ -4,12 +4,34 @@
     --color-glass: rgba(0, 0, 0, 0.3);
     --color-shadow: 0.5px 0.5px 2px 1px rgba(255, 255, 255, 0.2);
     --color-ico: invert(0%);
+    --background-url: url(backgrounds/Default.jpg);
+    --font-family-h1: 'Fredoka One', cursive;
 }
-:root[theme='light'] {
+:root[theme="light"] {
     --color-header: rgba(255, 255, 255, 0.8);
     --color-glass: rgba(255, 255, 255, 0.3);
     --color-shadow: 0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.2);
     --color-ico: invert(20%);
+}
+:root[event="NewYear"] {
+    --background-url: url(backgrounds/NewYear.jpg);
+    --font-family-h1: 'Rubik Wet Paint', cursive;
+}
+:root[event="Helloween"] {
+    --background-url: url(backgrounds/Helloween.jpg);
+    --font-family-h1: 'Creepster', cursive;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #171717;
+} 
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #52575D;
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 50px;
+    background: #41444B;
 }
 ::selection{
     color: #1A132F;
@@ -19,13 +41,13 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(backgrounds/Main.jpg);
+    background-image: var(--background-url);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 h1 {
-    font-family: 'Fredoka One', cursive;
+    font-family: var(--font-family-h1);
 }
 li {
     list-style-type: none; 
