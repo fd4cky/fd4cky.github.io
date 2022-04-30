@@ -11,9 +11,10 @@ function scaling() {
 
   if (width > 768) {
     content.setAttribute('class', `${content.getAttribute('class')} d-flex`)
-    bio.setAttribute('class', `${bio.getAttribute('class')} w-75`)
-    soc.setAttribute('class', `${soc.getAttribute('class')} w-25`)
+    bio.setAttribute('class', `${bio.getAttribute('class')} w-75 mx-1`)
+    soc.setAttribute('class', `${soc.getAttribute('class')} w-25 mx-1`)
   }else {
+    content.setAttribute('class', `${content.getAttribute('class')} mx-2`)
     bio.setAttribute('class', `${bio.getAttribute('class')} w-100`)
     soc.setAttribute('class', `${soc.getAttribute('class')} w-100`)
   }
@@ -44,7 +45,7 @@ function switchTheme() {
   })
 }
 
-async function getAva() {
+async function getAva() { //code by kirillsaint
   const response = await fetch('https://api.telegram.org/bot5281659940:AAEJLcavorU-PoeGX8Q49nGNkDuO9vzGXBE/getUserProfilePhotos?user_id=5285094955')
   const data = await response.json()
   
