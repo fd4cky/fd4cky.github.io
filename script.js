@@ -1,7 +1,7 @@
+scaling()
 getAva()
 switchTheme()
 switchHoliday()
-scaling()
 
 function scaling() {
   let width = window.innerWidth
@@ -21,6 +21,7 @@ function scaling() {
 }
 
 function switchHoliday() {
+  let links = ['vk', 'tg', 'git', 'steam']
   let date = new Date()
   let snow = document.createElement('script')
 
@@ -30,6 +31,11 @@ function switchHoliday() {
     snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'
   }else if (date.getDate() >= 20 & date.getMonth() == 9 | date.getDate() <= 5 & date.getMonth() == 10) {
     document.documentElement.setAttribute('event', 'Helloween')
+  }else if (date.getDate() == 1 & date.getMonth() == 4) {
+    for (let i = 0; i < links.length; i++) {
+      let name = document.getElementById(links[i])
+      name.setAttribute('class', `${name.getAttribute('class')} gradient`)
+    }
   }
 }
 

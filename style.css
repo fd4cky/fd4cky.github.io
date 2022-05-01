@@ -74,6 +74,35 @@ li {
     background-color: var(--color-glass);
     border-radius: 20px;
 }
+.gradient {
+    position: relative;
+}
+.gradient:hover {
+    animation: icoGradient 8s linear infinite;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    line-height: 60px;
+    box-sizing: border-box;
+    background-size: 400%;
+}
+.gradient:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 20px;
+    opacity: 0;
+    transition: var(--trans);
+}
+.gradient:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: icoGradient 8s linear infinite;
+}
 .ico {
     transition: var(--trans);
     filter: var(--color-ico);
@@ -100,5 +129,13 @@ li {
     }
     .glass:hover {
         transform: translate(0);
+    }
+}
+@keyframes icoGradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
     }
 }
