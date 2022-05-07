@@ -11,7 +11,7 @@
     --color-header: rgba(255, 255, 255, 0.8);
     --color-glass: rgba(255, 255, 255, 0.3);
     --color-shadow: 0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.2);
-    --color-ico: invert(20%);
+    --color-ico: invert(75%);
 }
 :root[event="NewYear"] {
     --background-url: url(backgrounds/NewYear.jpg);
@@ -82,7 +82,7 @@ li {
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     line-height: 60px;
     box-sizing: border-box;
-    background-size: 400%;
+    background-size: 1000%;
 }
 .gradient:before {
     content: "";

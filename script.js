@@ -1,7 +1,14 @@
+update()
 scaling()
 getAva()
 switchTheme()
 switchHoliday()
+
+function update() {
+  let date = new Date()
+
+  document.getElementById('textBio').innerHTML = `Всем привет, я фдаки.<br><br>Мне ${date.getFullYear() - 1807} лет, как вы видите денег нет даже на домен и хостинг.`
+}
 
 function scaling() {
   let width = window.innerWidth
@@ -24,6 +31,7 @@ function switchHoliday() {
   let links = ['vk', 'tg', 'git', 'steam']
   let date = new Date()
   let snow = document.createElement('script')
+  let p = document.createElement('p')
 
   if (date.getMonth() == 11 | date.getMonth() == 0) {
     document.documentElement.setAttribute('event', 'NewYear')
