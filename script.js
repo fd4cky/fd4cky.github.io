@@ -12,13 +12,13 @@ function update() {
 
 function scaling() {
   let width = window.innerWidth
-  let content = document.getElementById('content')
+  let content = document.getElementById('contentHead')
   let bio = document.getElementById('bio')
   let soc = document.getElementById('soc')
 
   if (width > 768) {
     content.setAttribute('class', `${content.getAttribute('class')} d-flex`)
-    bio.setAttribute('class', `${bio.getAttribute('class')} w-75 mx-1`)
+    bio.setAttribute('class', `${bio.getAttribute('class')} w-100 mx-1`)
     soc.setAttribute('class', `${soc.getAttribute('class')} w-25 mx-1`)
   }else {
     content.setAttribute('class', `${content.getAttribute('class')} mx-2`)
@@ -31,7 +31,6 @@ function switchHoliday() {
   let links = ['vk', 'tg', 'git', 'steam']
   let date = new Date()
   let snow = document.createElement('script')
-  let p = document.createElement('p')
 
   if (date.getMonth() == 11 | date.getMonth() == 0) {
     document.documentElement.setAttribute('event', 'NewYear')
