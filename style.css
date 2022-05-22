@@ -117,6 +117,19 @@ li {
     width: 5ex; 
     height: 5ex;
 }
+#contentHead {
+    display: flex;
+}
+#bio {
+    width: 100%;
+    margin-right: 0.5ex;
+    margin-left: 0.5ex;
+}
+#soc {
+    width: 25%;
+    margin-right: 0.5ex;
+    margin-left: 0.5ex;
+}
 @media screen and (max-width: 780px) {
     .glass {
         border-radius: 30px;
@@ -126,6 +139,21 @@ li {
     }
     .glass:hover {
         transform: translate(0);
+    }
+    #contentHead {
+        display: inline;
+        margin-left: 1ex;
+        margin-right: 1ex;
+    } 
+    #bio {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #soc {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 @keyframes icoGradient {

@@ -1,5 +1,4 @@
 update()
-scaling()
 getAva()
 switchTheme()
 switchHoliday()
@@ -8,23 +7,6 @@ function update() {
   let date = new Date()
 
   document.getElementById('textBio').innerHTML = `Всем привет, я фдаки.<br><br>Мне ${date.getFullYear() - 1807} лет, как вы видите денег нет даже на домен и хостинг.`
-}
-
-function scaling() {
-  let width = window.innerWidth
-  let content = document.getElementById('contentHead')
-  let bio = document.getElementById('bio')
-  let soc = document.getElementById('soc')
-
-  if (width > 768) {
-    content.setAttribute('class', `${content.getAttribute('class')} d-flex`)
-    bio.setAttribute('class', `${bio.getAttribute('class')} w-100 mx-1`)
-    soc.setAttribute('class', `${soc.getAttribute('class')} w-25 mx-1`)
-  }else {
-    content.setAttribute('class', `${content.getAttribute('class')} mx-2`)
-    bio.setAttribute('class', `${bio.getAttribute('class')} w-100`)
-    soc.setAttribute('class', `${soc.getAttribute('class')} w-100`)
-  }
 }
 
 function switchHoliday() {
