@@ -7,6 +7,7 @@ function update() {
   let date = new Date()
 
   document.getElementById('textBio').innerHTML = `Всем привет, я фдаки.<br><br>Мне ${date.getFullYear() - 1807} лет, как вы видите денег нет даже на домен и хостинг.`
+  document.documentElement.setAttribute('theme', getCookie('theme'))
 }
 
 function switchHoliday() {
@@ -34,10 +35,31 @@ function switchTheme() {
   buttonSwitch.addEventListener('click', () => {
     if (document.documentElement.getAttribute('theme') == 'dark'){
       document.documentElement.setAttribute('theme', 'light')
+      document.cookie = "theme=light; max-age=604800";
     }else {
       document.documentElement.setAttribute('theme', 'dark')
+      document.cookie = "theme=dark; max-age=604800";
     }
   })
+}
+
+function getCookie(name) {
+	var name_cook = name+"=";
+	var spl = document.cookie.split(";");
+	
+	for(var i=0; i<spl.length; i++) {
+		var c = spl[i];
+		
+		while(c.charAt(0) == " ") {
+			c = c.substring(1, c.length);
+		}
+		
+		if(c.indexOf(name_cook) == 0) {
+			return c.substring(name_cook.length, c.length);
+		}
+	}
+	
+	return null;
 }
 
 async function getAva() { //code by kirillsaint
