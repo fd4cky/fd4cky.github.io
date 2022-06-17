@@ -6,7 +6,7 @@ switchHoliday()
 function update() {
   let date = new Date()
 
-  document.getElementById('textBio').innerHTML = `Всем привет, я фдаки.<br><br>Мне ${date.getFullYear() - 1807} лет, как вы видите денег нет даже на домен и хостинг.`
+  document.getElementById('textBio').innerHTML = `Ребят, я fdacky.<br><br>Наверное мне уже ${date.getFullYear() - 1807} лет, по этому хочу сказать что`
   document.documentElement.setAttribute('theme', getCookie('theme'))
 }
 
