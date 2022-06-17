@@ -64,6 +64,22 @@ li {
     backdrop-filter: blur(10px);
     box-shadow: var(--color-shadow);
 }
+.glassBlog {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: var(--trans);
+}
+.glassBlog:hover {
+    color: white;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(10px);
+}
 .icoBack {
     width: min-content;
     border-radius: 25px;
