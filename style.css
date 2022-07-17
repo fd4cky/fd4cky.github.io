@@ -70,10 +70,10 @@ li {
 }
 .blog {
     font-size: 3ex;
-    transition: all 200ms;
+    transition: var(--trans);
 }
 .blog:hover {
-    font-size: 3.4ex;
+    transform: scale(1.2);
 }
 .icoBack {
     height: 9.4ex;
