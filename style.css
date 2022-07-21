@@ -153,6 +153,9 @@ li {
     margin-left: 0.5ex;
 }
 @media screen and (max-width: 780px) {
+    :root {
+        --background-url: url(backgrounds/sDefault.jpg);
+    }
     .glass {
         border-radius: 30px;
         background-color: var(--color-glass);
