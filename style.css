@@ -69,11 +69,12 @@ li {
     backdrop-filter: blur(10px);
 }
 .blog {
+    margin-top: 0.1ex;
     font-size: 3ex;
     transition: var(--trans);
 }
 .blog:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .icoBack {
     height: 9.4ex;
