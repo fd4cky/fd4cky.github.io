@@ -1,4 +1,4 @@
-:root[theme="dark"] {
+:root[] {
     --trans: all 400ms;
     --color-header: rgba(33, 37, 41, 1);
     --color-glass: rgba(0, 0, 0, 0.3);
@@ -154,7 +154,7 @@ li {
     margin-left: 0.5ex;
 }
 @media screen and (max-width: 780px) {
-    :root[theme="dark"] {
+    :root[] {
         --background-url: url(backgrounds/sDefault.jpg);
     }
     .glass {
