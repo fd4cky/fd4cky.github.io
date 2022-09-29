@@ -154,7 +154,7 @@ li {
     margin-left: 0.5ex;
 }
 @media screen and (max-width: 780px) {
-    :root[dark] {
+    :root[theme="dark"] {
         --background-url: url(backgrounds/sDefault.jpg);
     }
     .glass {
