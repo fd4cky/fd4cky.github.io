@@ -61,7 +61,7 @@ li {
 .glass {
     border-radius: 50px;
     transition: var(--trans);
-    animation: hello 0.8s linear;
+    animation: hello 0.4s ease-in-out;
 }
 .glass:hover {
     transform: translate(0, -0.5ex);
@@ -193,13 +193,10 @@ li {
 @keyframes hello {
     0% {
         opacity: 0;
-        transform: translate(0, -120%);
-    }
-    60% {
-        opacity: 0.4;
-        transform: translate(0, 0);
+        transform: translate(0, -20%);
     }
     100% {
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
