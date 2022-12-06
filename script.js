@@ -18,7 +18,8 @@ function switchHoliday() {
   if (date.getMonth() == 11 | date.getMonth() == 0) {
     document.documentElement.setAttribute('event', 'NewYear')
     document.head.appendChild(snow)
-    snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'
+    // snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'
+    snow.src = 'libraries/snow.js'
   }else if (date.getDate() >= 20 & date.getMonth() == 9 | date.getDate() <= 5 & date.getMonth() == 10) {
     document.documentElement.setAttribute('event', 'Helloween')
   }else if (date.getDate() == 1 & date.getMonth() == 4) {

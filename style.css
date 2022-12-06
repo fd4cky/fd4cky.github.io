@@ -194,6 +194,7 @@ li {
     0% {
         opacity: 0;
         transform: translate(0, -20%);
+
     }
     100% {
         transform: translate(0, 0);
