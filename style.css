@@ -1,6 +1,6 @@
 :root {
     --trans: all 400ms;
-    --color-header: rgba(33, 37, 41, 1);
+    --color-header: rgba(29,29,31,0.72);
     --color-glass: rgba(0, 0, 0, 0.3);
     --background-url: url(backgrounds/Default.jpg);
     --font-family-h1: 'Fredoka One', cursive;
@@ -57,6 +57,7 @@ li {
 }
 .header {
     background-color: var(--color-header);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 .glass {
     border-radius: 50px;
