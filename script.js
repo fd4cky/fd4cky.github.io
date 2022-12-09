@@ -18,7 +18,7 @@ function switchHoliday() {
   if (date.getMonth() == 11 | date.getMonth() == 0) {
     document.documentElement.setAttribute('event', 'NewYear')
     document.head.appendChild(snow)
-    // snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'
+    // snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'    а прикол сайт блокнут, и нет моего снега
     snow.src = 'libraries/snow.js'
   }else if (date.getDate() >= 20 & date.getMonth() == 9 | date.getDate() <= 5 & date.getMonth() == 10) {
     document.documentElement.setAttribute('event', 'Helloween')
@@ -34,12 +34,12 @@ function switchTheme() {
   const buttonSwitch = document.getElementById('ava')
 
   buttonSwitch.addEventListener('click', () => {
-    if (document.documentElement.getAttribute('theme') == 'dark'){
-      document.documentElement.setAttribute('theme', 'light')
-      document.cookie = "theme=light; max-age=604800";
-    }else {
+    if (document.documentElement.getAttribute('theme') == 'light'){
       document.documentElement.setAttribute('theme', 'dark')
       document.cookie = "theme=dark; max-age=604800";
+    }else {
+      document.documentElement.setAttribute('theme', 'light')
+      document.cookie = "theme=light; max-age=604800";
     }
   })
 }

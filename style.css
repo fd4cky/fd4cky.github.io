@@ -74,7 +74,7 @@ li {
     transition: var(--trans);
 }
 .blog:hover {
-    transform: scale(1.1);
+    transform: scale(0.75);
 }
 .icoBack {
     height: 9.4ex;
@@ -128,7 +128,7 @@ li {
     transition: var(--trans);
 }
 .ico:hover {
-    transform: scale(1.05);
+    transform: scale(0.925);
 }
 .ava {
     border-radius: 50%;
