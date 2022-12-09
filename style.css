@@ -70,12 +70,13 @@ li {
     backdrop-filter: blur(10px);
 }
 .blog {
+    font-family: 'Fredoka One', cursive;
     margin-top: 0.1ex;
     font-size: 3ex;
     transition: var(--trans);
 }
 .blog:hover {
-    transform: scale(0.75);
+    transform: scale(0.925);
 }
 .icoBack {
     height: 9.4ex;
