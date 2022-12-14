@@ -5,8 +5,11 @@ switchHoliday()
 
 function update() {
   let date = new Date()
-
-  document.getElementById('textBio').innerHTML = `Наверное мне уже ${date.getFullYear() - 2007} лет, по этому хочу сказать что я вахуе, старый пиздец`
+  if (date.getDate() == 1 & date.getMonth() == 4) {
+    document.getElementById('textBio').innerHTML = `Наверное мне уже ${date.getFullYear() - 2007} лет, по этому хочу сказать что я вахуе, старый пиздец<br><br>У меня сегодня др🥳🥳🥳<br><a href="https://www.donationalerts.com/r/fdacky" class="aDonate">Чисто для людей с душой</a>`
+  } else {
+    document.getElementById('textBio').innerHTML = `Наверное мне уже ${date.getFullYear() - 2007} лет, по этому хочу сказать что я вахуе, старый пиздец`
+  }
   document.documentElement.setAttribute('theme', getCookie('theme'))
 }
 

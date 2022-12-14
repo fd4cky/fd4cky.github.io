@@ -48,6 +48,23 @@ h1 {
 li {
     list-style-type: none; 
 }
+.aDonate {
+    color: white;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    background-image: linear-gradient(to right, white, white);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: all 0.4s ease;
+}
+.aDonate:hover {
+    color: white;
+    background-size: 100% 2px;
+}
 .aStyle {
     color: white;
     text-decoration: none;
@@ -169,6 +186,14 @@ li {
     .glass:hover {
         transform: translate(0);
         box-shadow: var(--color-shadow);
+    }
+    .aDonate {
+        color: transparent;
+        background-repeat: inherit;
+        background-size: 100% 2px;  
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right, red, fuchsia);
     }
     #contentHead {
         display: inline;
