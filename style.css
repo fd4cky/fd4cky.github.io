@@ -30,8 +30,8 @@
     background: #41444B;
 }
 ::selection{
-    color: #1A132F;
-    background-color: #F7E2E2;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(29,29,31,0.5);
 }
 body {
     height: 100%;
