@@ -181,7 +181,7 @@ li {
         border-radius: 30px;
         background-color: var(--color-glass);
         backdrop-filter: blur(10px);
-        box-shadow: var(--color-shadow);
+        box-shadow: 0px 0.5ex 8ex rgba(0, 0, 0, 1);
     }
     .glass:hover {
         transform: translate(0);
