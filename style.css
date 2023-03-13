@@ -185,7 +185,6 @@ li {
     }
     .glass:hover {
         transform: translate(0);
-        box-shadow: var(--color-shadow);
     }
     .aDonate {
         color: transparent;

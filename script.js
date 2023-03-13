@@ -81,3 +81,7 @@ async function getAva() { //code by kirillsaint
   
   document.getElementById('ava').src = avaUrl
 }
+
+function openLink(link) {
+  window.open(link, '_blank')
+}
