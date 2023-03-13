@@ -79,13 +79,13 @@ li {
 .glass {
     border-radius: 50px;
     transition: var(--trans);
+    background-color: var(--color-glass);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0.5ex 5ex rgba(0, 0, 0, 1);
     animation: hello 0.4s ease-in-out;
 }
 .glass:hover {
     transform: translate(0, -0.5ex);
-    background-color: var(--color-glass);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0.5ex 10ex rgba(0, 0, 0, 1);
 }
 .blog {
     font-family: 'Fredoka One', cursive;
@@ -181,7 +181,7 @@ li {
         border-radius: 30px;
         background-color: var(--color-glass);
         backdrop-filter: blur(10px);
-        box-shadow: 0px 0.5ex 8ex rgba(0, 0, 0, 1);
+        box-shadow: 0px 0.5ex 5ex rgba(0, 0, 0, 1);
     }
     .glass:hover {
         transform: translate(0);
