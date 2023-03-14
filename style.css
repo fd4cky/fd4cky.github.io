@@ -79,12 +79,12 @@ li {
 .glass {
     border-radius: 50px;
     transition: var(--trans);
-    background-color: var(--color-glass);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0.5ex 5ex rgba(0, 0, 0, 1);
     animation: hello 0.4s ease-in-out;
 }
 .glass:hover {
+    background-color: var(--color-glass);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0.5ex 5ex rgba(0, 0, 0, 1);
     transform: translate(0, -0.5ex);
 }
 .blog {
