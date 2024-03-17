@@ -8,9 +8,9 @@ function update() {
   if (date.getDate() == 1 & date.getMonth() == 4) {
     document.getElementById('textBio').innerHTML = `У меня сегодня др🥳🥳🥳<br><a href="https://www.donationalerts.com/r/fdacky" class="aDonate">Чисто для людей с душой</a>`
   } else if (date.getMonth() >= 4) {
-    document.getElementById('textBio').innerHTML = `хз че написать`
+    document.getElementById('textBio').innerHTML = `похуй мне похуй`
   } else {
-    document.getElementById('textBio').innerHTML = `хз че написать`
+    document.getElementById('textBio').innerHTML = `похуй мне похуй`
   } 
   document.documentElement.setAttribute('theme', getCookie('theme'))
 }
