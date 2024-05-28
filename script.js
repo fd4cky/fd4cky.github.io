@@ -6,7 +6,7 @@ switchHoliday()
 function update() {
   let date = new Date()
   if (date.getDate() == 1 & date.getMonth() == 4) {
-    document.getElementById('textBio').innerHTML = `У меня сегодня др🥳🥳🥳<br><a href="https://www.donationalerts.com/r/fdacky" class="aDonate">Чисто для людей с душой</a>`
+    document.getElementById('textBio').innerHTML = `У меня сегодня др🥳🥳🥳<br><a href="https://fdackysend.t.me" class="aDonate">Чисто для людей с душой</a>`
   } else if (date.getMonth() >= 4) {
     document.getElementById('textBio').innerHTML = `похуй мне похуй`
   } else {
@@ -23,7 +23,7 @@ function switchHoliday() {
   if (date.getMonth() == 11 | date.getMonth() == 0) {
     document.documentElement.setAttribute('event', 'NewYear')
     document.head.appendChild(snow)
-    // snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'    а прикол сайт блокнут, и нет моего снега
+    // snow.src = 'https://thecode.media/wp-content/uploads/2019/12/snowfall2020.js'    а прикол сайт блокнут, и нет моего снега // оставил что бы было :)
     snow.src = 'libraries/snow.js'
   }else if (date.getDate() >= 20 & date.getMonth() == 9 | date.getDate() <= 5 & date.getMonth() == 10) {
     document.documentElement.setAttribute('event', 'Helloween')

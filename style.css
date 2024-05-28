@@ -89,29 +89,29 @@ li {
 }
 .blog {
     font-family: 'Fredoka One', cursive;
-    margin-top: 0.1ex;
-    font-size: 3ex;
+    font-size: 4ex;
     transition: var(--trans);
 }
 .blog:hover {
     transform: scale(0.925);
 }
+.tgIcoBack {
+    height: 5ex;
+    width: 10ex;
+    border-radius: 25px;
+    transition: var(--trans);
+}
+.tgIcoBack:hover {
+    background-color: var(--color-glass);
+    border-radius: 20px;
+}
 .icoBack {
-    height: 9.4ex;
-    width: 9.4ex;
+    height: 10ex;
+    width: 10ex;
     border-radius: 25px;
     transition: var(--trans);
 }
 .icoBack:hover {
-    background-color: var(--color-glass);
-    border-radius: 20px;
-}
-#tg {
-    overflow: hidden;
-    transition: var(--trans);
-}
-#tg:hover {
-    height: 14ex;
     background-color: var(--color-glass);
     border-radius: 20px;
 }
@@ -164,7 +164,7 @@ li {
     display: flex;
 }
 #bio {
-    width: 100%;
+    width: 75%;
     margin-right: 0.5ex;
     margin-left: 0.5ex;
 }
